@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Forum&family=Mulish:wght@800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card-layout {
+    @apply lg:h-auto lg:w-auto rounded-xl shadow-lg text-center p-3 mb-3 hover:scale-105 hover:lg:z-50 flex flex-col
+}
