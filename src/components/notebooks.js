@@ -1,9 +1,13 @@
 import Link from "next/link";
 import Hero from "./hero";
 import fetcher from "../lib/fetcher";
+import Spinner from "./_child/spinner";
+import Error from "./_child/error";
 
 export default function section4() {
   const { data, isLoading, isError } = fetcher("api/notebooks");
+  if(isLoading) return <Spinner></Spinner>;
+  if(isError) return <Error></Error>;
 
   return (
     <section className="bg-gradient-to-b from-halcyon-50 to-halcyon-100">

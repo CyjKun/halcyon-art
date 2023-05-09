@@ -2,9 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import Hero from "./hero";
 import fetcher from "../lib/fetcher";
+import Spinner from "./_child/spinner";
+import Error from "./_child/error";
 
-export default function section3() {
+export default function comissions() {
   const { data, isLoading, isError } = fetcher("api/comissions");
+  if(isLoading) return <Spinner></Spinner>;
+  if(isError) return <Error></Error>;
 
   return (
     <section className="bg-gradient-to-b from-halcyon-50 to-halcyon-100">
