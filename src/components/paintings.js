@@ -32,7 +32,7 @@ export default function paintings() {
         </div>
         <div className="footer flex justify-center">
           <Link
-            href={"#top"}
+            href={"/"}
             className="text-base font-bold underline hover:text-sky-400"
           >
             back to home

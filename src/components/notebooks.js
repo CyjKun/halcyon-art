@@ -46,7 +46,7 @@ export default function section4() {
           </p>
         </div>
         <div className="footer flex justify-center">
-          <Link href={"#top"} className="text-base font-bold underline">
+          <Link href={"/"} className="text-base font-bold underline">
             back to home
           </Link>
         </div>

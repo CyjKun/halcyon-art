@@ -39,7 +39,7 @@ export default function section5() {
           </div>
         </div>
         <div className="footer flex justify-center">
-          <Link href={"#top"} className="text-base font-bold underline">
+          <Link href={"/"} className="text-base font-bold underline">
             back to home
           </Link>
         </div>
