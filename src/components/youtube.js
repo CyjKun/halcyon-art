@@ -34,7 +34,7 @@ export default function youtube() {
                 <div className="flex gap-2">
                   <p>Instagram:</p>
                   <Link href={"/"} className="underline">
-                    @halcyon.art
+                    @hal.cyon.art
                   </Link>
                 </div>
                 <div className="flex gap-2">

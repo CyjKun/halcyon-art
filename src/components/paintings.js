@@ -7,7 +7,7 @@ export default function section2() {
   const { data, isLoading, isError } = fetcher("api/paintings");
 
   return (
-    <section className="bg-gradient-to-b from-halcyon-50 to-halcyon-100">
+    <section className="paint bg-gradient-to-b from-halcyon-50 to-halcyon-100">
       <div className="md:h-screen mx-auto md:p-20 p-6 flex flex-col justify-between">
         <div>
           <h1 className="font-subject font-bold text-4xl">recent paintings</h1>

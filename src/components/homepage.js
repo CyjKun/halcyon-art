@@ -27,19 +27,19 @@ export default function homepage() {
 
           <div className="card-links flex flex-col gap-6 justify-center lg:p-10">
             <div className="hidden social-icons md:flex gap-10">
-              <Link href={"/"}>
+              <Link href={"https://facebook.com/halcyonartgallery"}>
                 <ImFacebook
                   size={45}
                   className="fill-primary hover:fill-primary-focus"
                 />
               </Link>
-              <Link href={"/"}>
+              <Link href={"https://instagram.com/hal.cyon.art/"}>
                 <ImInstagram
                   size={45}
                   className="fill-primary hover:fill-primary-focus"
                 />
               </Link>
-              <Link href={"/"}>
+              <Link href={"https://youtube.com/HalcyonArt"}>
                 <ImYoutube
                   size={45}
                   className="fill-primary hover:fill-primary-focus"
