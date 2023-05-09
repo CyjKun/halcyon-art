@@ -7,6 +7,7 @@ export default function format({ children }) {
     <>
       <Head>
         <title>Halcyon Art</title>
+        <link rel="shortcut icon" href="/images/Logo.png" />
       </Head>
       <main>{children}</main>
     </>
