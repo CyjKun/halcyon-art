@@ -10,7 +10,7 @@ export default function section4() {
   if(isError) return <Error></Error>;
 
   return (
-    <section className="bg-gradient-to-b from-halcyon-50 to-halcyon-100">
+    <section id="art" className="bg-gradient-to-b from-halcyon-50 to-halcyon-100">
       <div className="md:h-screen md:mx-auto md:p-20 p-6 flex flex-col justify-between gap-4">
         <div className="flex flex-col md:flex-row md:justify-between ">
           <h1 className="font-subject font-bold text-4xl">art merchandise</h1>
@@ -46,7 +46,7 @@ export default function section4() {
           </p>
         </div>
         <div className="footer flex justify-center">
-          <Link href={"/"} className="text-base font-bold underline">
+          <Link href={"#top"} className="text-base font-bold underline">
             back to home
           </Link>
         </div>

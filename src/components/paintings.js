@@ -5,19 +5,19 @@ import fetcher from "../lib/fetcher";
 import Spinner from "./_child/spinner";
 import Error from "./_child/error";
 
-export default function section2() {
+export default function paintings() {
   const { data, isLoading, isError } = fetcher("api/paintings");
   if(isLoading) return <Spinner></Spinner>;
   if(isError) return <Error></Error>;
 
   return (
-    <section className="paint bg-gradient-to-b from-halcyon-50 to-halcyon-100">
+    <section id="paint" lassName="bg-gradient-to-b from-halcyon-50 to-halcyon-100">
       <div className="md:h-screen mx-auto md:p-20 p-6 flex flex-col justify-between">
         <div>
           <h1 className="font-subject font-bold text-4xl">recent paintings</h1>
           <div className="flex flex-col md:flex-row md:justify-between font-description">
             <Link
-              href={"/"}
+              href={"https://instagram.com/hal.cyon.art/"}
               className="text-xl text-halcyon-600 hover:text-halcyon-800"
             >
               browse instagram feed for more artworks
@@ -32,7 +32,7 @@ export default function section2() {
         </div>
         <div className="footer flex justify-center">
           <Link
-            href={"/"}
+            href={"#top"}
             className="text-base font-bold underline hover:text-sky-400"
           >
             back to home

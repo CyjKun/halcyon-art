@@ -6,7 +6,7 @@ import { ImFacebook, ImInstagram, ImYoutube } from "react-icons/im";
 
 export default function homepage() {
   return (
-    <section className="bg-gradient-to-b from-halcyon-50 to-halcyon-100">
+    <section id="top" className="bg-gradient-to-b from-halcyon-50 to-halcyon-100">
       <div className="md:h-screen container mx-auto md:p-20 p-6">
         <div className="grid md:grid-cols-2 gap-3">
           <div className="homepage">

@@ -16,9 +16,12 @@ export default function section5() {
           <h1 className="font-subject font-bold text-4xl">art merchandise</h1>
           <div className="flex flex-col">
             <p className="text-lg font-subject">checkout via:</p>
-            <h1 className="text-halcyon-600 hover:text-halcyon-800 font-subtitle text-xl">
+            <Link
+              href={"https://forms.gle/wzv2cXzaPYGURGk97"}
+              className="text-halcyon-600 hover:text-halcyon-800 font-subtitle text-xl"
+            >
               order form
-            </h1>
+            </Link>
           </div>
         </div>
         <div className="flex flex-col md:flex-row md:justify-between ">
@@ -36,7 +39,7 @@ export default function section5() {
           </div>
         </div>
         <div className="footer flex justify-center">
-          <Link href={"/"} className="text-base font-bold underline">
+          <Link href={"#top"} className="text-base font-bold underline">
             back to home
           </Link>
         </div>

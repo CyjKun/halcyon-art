@@ -8,7 +8,7 @@ export default function section5() {
   if(isError) return <Error></Error>;
 
   return (
-    <section className="bg-gradient-to-b from-halcyon-50 to-halcyon-100">
+    <section id="about" className="bg-gradient-to-b from-halcyon-50 to-halcyon-100">
       <div className="hero min-h-screen">
         <div className="hero-content flex-col md:flex-row md:gap-24">
           <img

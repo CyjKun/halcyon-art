@@ -13,7 +13,7 @@ export default function youtube() {
   if(isError) return <Error></Error>;
 
   return (
-    <section className="bg-gradient-to-b from-halcyon-50 to-halcyon-100">
+    <section id="youtube" className="bg-gradient-to-b from-halcyon-50 to-halcyon-100">
       <div className="md:h-screen mx-auto md:p-20 p-6">
         <div className="grid md:grid-cols-2 gap-3">
           <div>

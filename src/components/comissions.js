@@ -17,7 +17,7 @@ export default function comissions() {
           <h1 className="font-subject font-bold text-4xl">sample comissions</h1>
           <div className="flex flex-col md:flex-row md:justify-between font-description">
             <Link
-              href={"/"}
+              href={"https://instagram.com/hal.cyon.art/"}
               className="text-xl text-halcyon-600 hover:text-halcyon-800"
             >
               browse instagram feed for more artworks
@@ -38,7 +38,7 @@ export default function comissions() {
         </div>
         <div className="footer flex justify-center">
           <Link
-            href={"/"}
+            href={"#top"}
             className="text-base font-bold underline hover:text-sky-400"
           >
             back to home
