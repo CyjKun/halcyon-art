@@ -1,20 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Forum&family=Mulish:wght@800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant&family=Forum&family=Mulish:wght@800&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.card-layout {
-    @apply lg:h-auto lg:w-auto rounded-xl shadow-lg text-center p-3 mb-3 hover:scale-105 hover:lg:z-50 flex flex-col
+@font-face {
+  font-family: "Boston";
+  src: url("../../public/fonts/BostonBlack.woff");
 }
 
-.loader{
-    @apply border-halcyon-200 rounded-full border-4 ease-linear h-10 w-10;
-    border-top-color: #363ce0;
-    animation: spinner 1.2s linear infinite;
+@font-face {
+  font-family: "Inter";
+  src: url("../../public/fonts/Inter-ExtraLight-BETA.woff");
 }
-  
-@keyframes spinner{
-    0% { transform: rotate(0deg);}
-    100% { transform: rotate(360deg);}
+
+.card-layout {
+  @apply lg:h-auto lg:w-auto rounded-xl shadow-lg text-center p-3 mb-3 hover:scale-105 hover:lg:z-50 flex flex-col;
+}
+
+.loader {
+  @apply border-halcyon-200 rounded-full border-4 ease-linear h-10 w-10;
+  border-top-color: #363ce0;
+  animation: spinner 1.2s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

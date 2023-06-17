@@ -4,7 +4,7 @@ export default function card() {
       <div className="card-layout bg-halcyon-0">
         <a
           href="#paint"
-          className="font-subtitle font-bold text-xl text-halcyon-500"
+          className="font-subject font-bold text-xl text-halcyon-500"
         >
           Paintings and comissions
         </a>
@@ -13,7 +13,7 @@ export default function card() {
         </a>
       </div>
       <div className="card-layout bg-halcyon-200 text-halcyon-950">
-        <a href="#art" className="font-subtitle font-bold text-xl">
+        <a href="#art" className="font-subject font-bold text-xl">
           Art merchandise
         </a>
         <a href="#art" className="font-description">
@@ -21,7 +21,7 @@ export default function card() {
         </a>
       </div>
       <div className="card-layout bg-halcyon-800 text-halcyon-50 ">
-        <a href="#youtube" className="font-subtitle font-bold text-xl">
+        <a href="#youtube" className="font-subject font-bold text-xl">
           Youtube vlog
         </a>
         <a href="#youtube" className="font-description">
@@ -29,7 +29,7 @@ export default function card() {
         </a>
       </div>
       <div className="card-layout bg-halcyon-400 text-halcyon-950">
-        <a href={"https://forms.gle/wzv2cXzaPYGURGk97"} className="font-subtitle font-bold text-xl">
+        <a href={"https://forms.gle/wzv2cXzaPYGURGk97"} className="font-subject font-bold text-xl">
           Order form
         </a>
         <a href={"https://forms.gle/wzv2cXzaPYGURGk97"} className="font-description">
@@ -37,7 +37,7 @@ export default function card() {
         </a>
       </div>
       <div className="card-layout bg-halcyon-500 text-halcyon-950">
-        <a href="#about" className="font-subtitle font-bold text-xl">
+        <a href="#about" className="font-subject font-bold text-xl">
           About the artist
         </a>
         <a href="#about" className="font-description">

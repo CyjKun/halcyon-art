@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Hero from "./hero";
+import Hero from "./hero-6";
 import fetcher from "../lib/fetcher";
 import Spinner from "./_child/spinner";
 import Error from "./_child/error";
@@ -31,10 +31,10 @@ export default function youtube() {
               />
             </div>
             <div className="py-6 flex flex-col items-center">
-              <div className="font-subtitle text-2xl font-semibold pb-6">
+              <div className="font-subject text-2xl font-semibold pb-6">
                 <p>Find me on social media</p>
               </div>
-              <div className="font-subtitle text-2xl font-semibold pb-6">
+              <div className="font-subject text-2xl font-semibold pb-6">
                 <div className="flex gap-2">
                   <p>Instagram:</p>
                   <Link href={"/"} className="underline">
@@ -54,7 +54,7 @@ export default function youtube() {
                   </Link>
                 </div>
               </div>
-              <div className="font-subtitle text-2xl font-semibold flex flex-col md:flex-row gap-2">
+              <div className="font-subject text-2xl font-semibold flex flex-col md:flex-row gap-2">
                 <p>For Collaborations:</p>
                 <p href={"/"} className="underline">
                   halcyonartpaintings@gmail.com

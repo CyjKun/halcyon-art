@@ -4,9 +4,8 @@ module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      subject: "'Mulish', sans-serif",
-      subtitle: "'Cormorant', serif",
-      description: "'Forum', cursive",
+      subject: "'Boston', sans-serif",
+      description: "'Inter', sans-serif",
     },
     colors: {
       halcyon: {

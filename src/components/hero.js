@@ -7,7 +7,7 @@ export default function hero() {
           bg-cover bg-fixed bg-center bg-no-repeat
         "
         style={{
-          backgroundImage: `url("/images/Transition.png")`,
+          backgroundImage: `url("/images/transitions/transition-1.jpeg")`,
         }}
       ></div>
     </div>

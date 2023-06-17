@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Hero from "./hero";
+import Hero from "./hero-2";
 import fetcher from "../lib/fetcher";
 import Spinner from "./_child/spinner";
 import Error from "./_child/error";
@@ -62,7 +62,7 @@ function Post({ data }) {
         <p className="text-2xl font-subject font-bold uppercase">
           {title || "Unknown"}{" "}
         </p>
-        <p className="text-lg font-subtitle font-semibold lowercase">
+        <p className="text-lg font-description font-semibold lowercase">
           {subtitle || "Unknown"} {description || "Unknown"}
         </p>
       </div>

@@ -17,9 +17,9 @@ export default function section5() {
           />
           <div>
             <h1 className="text-5xl font-bold font-subject">
-              Rentelle Anne Miclat
+              Renztelle Anne Miclat
             </h1>
-            <div className="font-subtitle text-xl font-semibold">
+            <div className="font-subject text-xl font-semibold">
               <p className="py-3">
                 I’m 25, a self taught artist based in the Philippines.
               </p>
@@ -77,10 +77,10 @@ function Post({ data }) {
           <p className="text-xl font-subject font-bold uppercase">
             {title || "Unknown"}{" "}
           </p>
-          <p className="text-lg font-subtitle font-semibold lowercase">
+          <p className="text-lg font-subject font-semibold lowercase">
             {subtitle || "Unknown"}
           </p>
-          <p className="text-lg font-subtitle font-semibold lowercase">
+          <p className="text-lg font-subject font-semibold lowercase">
             {description || "Unknown"}
           </p>
         </div>

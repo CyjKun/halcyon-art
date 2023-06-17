@@ -11,7 +11,7 @@ export default function homepage() {
         <div className="grid md:grid-cols-2 gap-3">
           <div className="homepage">
             <div className="title pb-3">
-              <h className="font-bold font-subject text-accent text-center lowercase text-4xl md:text-6xl">
+              <h className="font-subject text-accent text-center lowercase text-4xl md:text-6xl">
                 Halcyon <br /> Art Gallery
               </h>
             </div>

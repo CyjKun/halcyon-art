@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Hero from "./hero";
+import Hero from "./hero-4";
 import fetcher from "../lib/fetcher";
 import Spinner from "./_child/spinner";
 import Error from "./_child/error";
@@ -18,7 +18,7 @@ export default function section4() {
             <p className="text-lg font-subject">checkout via:</p>
             <Link
               href={"https://forms.gle/wzv2cXzaPYGURGk97"}
-              className="text-halcyon-600 hover:text-halcyon-800 font-subtitle text-xl"
+              className="text-halcyon-600 hover:text-halcyon-800 font-description text-xl"
             >
               order form
             </Link>
@@ -65,7 +65,7 @@ function Post({ data }) {
         <p className="text-2xl font-subject font-bold uppercase">
           {title || "Unknown"}{" "}
         </p>
-        <p className="text-lg font-subtitle font-semibold lowercase">
+        <p className="text-lg font-subject font-semibold lowercase">
           {subtitle || "Unknown"} <br /> {description || "Unknown"}
         </p>
       </div>
