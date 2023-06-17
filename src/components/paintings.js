@@ -11,7 +11,7 @@ export default function paintings() {
   if(isError) return <Error></Error>;
 
   return (
-    <section id="paint" lassName="bg-gradient-to-b from-halcyon-50 to-halcyon-100">
+    <section id="paint" className="bg-gradient-to-b from-halcyon-50 to-halcyon-100">
       <div className="md:h-screen mx-auto md:p-20 p-6 flex flex-col justify-between">
         <div>
           <h1 className="font-subject font-bold text-4xl">recent paintings</h1>

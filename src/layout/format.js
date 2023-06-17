@@ -1,6 +1,19 @@
-
 import Footer from "../components/footer";
 import Head from "next/head";
+
+import localFont from 'next/font/local'
+
+const bostonFont = localFont({
+  src: '../../public/fonts/BostonBlack.woff',
+  display: 'swap',
+  variable: '--font-bostonFont',
+})
+
+const interFont = localFont({
+  src: '../../public/fonts/Inter-ExtraLight-BETA.woff',
+  display: 'swap',
+  variable: '--font-interFont',
+})
 
 export default function format({ children }) {
   return (
@@ -9,7 +22,7 @@ export default function format({ children }) {
         <title>Halcyon Art</title>
         <link rel="shortcut icon" href="/images/Logo.png" />
       </Head>
-      <main>{children}</main>
+      <main className={`${bostonFont.variable} ${interFont.variable}`}>{children}</main>
     </>
   );
 }
