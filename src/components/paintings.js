@@ -12,10 +12,10 @@ export default function paintings() {
 
   return (
     <section id="paint" className="bg-gradient-to-b from-halcyon-50 to-halcyon-100">
-      <div className="md:h-screen mx-auto md:p-20 p-6 flex flex-col justify-between">
+      <div className="lg:min-h-screen mx-auto lg:p-20 p-6 flex flex-col justify-between">
         <div>
           <h1 className="font-subject font-bold text-4xl">recent paintings</h1>
-          <div className="flex flex-col md:flex-row md:justify-between font-description">
+          <div className="flex flex-col lg:flex-row lg:justify-between font-description">
             <Link
               href={"https://instagram.com/hal.cyon.art/"}
               className="text-xl text-halcyon-600 hover:text-halcyon-800"
@@ -25,7 +25,7 @@ export default function paintings() {
           </div>
         </div>
         {/* grid columns */}
-        <div className="grid md:grid-cols-1 lg:grid-cols-4 gap-6 place-content-center">
+        <div className="grid lg:grid-cols-4 gap-6 place-content-center">
           {data?.map((value, index) => (
             <Post data={value} key={index}></Post>
           ))}

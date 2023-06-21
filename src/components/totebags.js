@@ -11,8 +11,8 @@ export default function section5() {
 
   return (
     <section className="bg-gradient-to-b from-halcyon-50 to-halcyon-100">
-      <div className="md:h-screen mx-auto md:p-20 p-6 flex flex-col justify-between">
-        <div className="flex flex-col md:flex-row md:justify-between ">
+      <div className="lg:min-h-screen mx-auto lg:p-20 p-6 flex flex-col justify-between">
+        <div className="flex flex-col lg:flex-row lg:justify-between ">
           <h1 className="font-subject font-bold text-4xl">art merchandise</h1>
           <div className="flex flex-col">
             <p className="text-lg font-subject">checkout via:</p>
@@ -24,11 +24,11 @@ export default function section5() {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row md:justify-between ">
+        <div className="flex flex-col lg:flex-row lg:justify-between ">
           <h1 className="font-subject font-bold text-2xl">totebags</h1>
         </div>
         <div className="flex">
-          <div className="grow grid md:grid-cols-1 lg:grid-cols-5 gap-6 place-items-center">
+          <div className="grow grid lg:grid-cols-5 gap-6 place-items-center">
             {data?.map((value, index) => (
               <Post data={value} key={index}></Post>
             ))}
@@ -54,10 +54,10 @@ function Post({ data }) {
   return (
     <div className="items ">
       <div className="painting flex flex-col gap-6">
-        <img src={img1 || "/"} className="object-cover md:h-[250px] md:w-[250px]" />
+        <img src={img1 || "/"} className="object-cover lg:h-[250px] lg:w-[250px]" />
         <img
           src={img2 || "/"}
-          className="hidden md:block object-cover  md:h-[250px] md:w-[250px]"
+          className="hidden lg:block object-cover  lg:h-[250px] lg:w-[250px]"
         />
         <div>
           <p className="text-xl font-subject font-bold uppercase">

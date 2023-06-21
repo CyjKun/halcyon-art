@@ -7,15 +7,15 @@ import { ImFacebook, ImInstagram, ImYoutube } from "react-icons/im";
 export default function homepage() {
   return (
     <section className="bg-gradient-to-b from-halcyon-50 to-halcyon-100">
-      <div className="md:h-screen container mx-auto md:p-20 p-6">
-        <div className="grid md:grid-cols-2 gap-3">
+      <div className="lg:min-h-screen container mx-auto lg:p-20 p-6">
+        <div className="grid lg:grid-cols-2 gap-3">
           <div className="homepage">
             <div className="title pb-3">
-              <h className="font-subject text-accent text-center lowercase text-4xl md:text-6xl">
+              <h className="font-subject text-accent text-center lowercase text-4xl lg:text-6xl">
                 Halcyon <br /> Art Gallery
               </h>
             </div>
-            <div className="home-image ">
+            <div className="home-image flex justify-center items-center">
               <Image
                 className="rounded-xl shadow-xl"
                 src={"/images/Homepage.png"}
@@ -26,7 +26,7 @@ export default function homepage() {
           </div>
 
           <div className="card-links flex flex-col gap-6 justify-center lg:p-10">
-            <div className="hidden social-icons md:flex gap-10">
+            <div className="hidden social-icons lg:flex gap-10">
               <Link href={"https://facebook.com/halcyonartgallery"}>
                 <ImFacebook
                   size={45}

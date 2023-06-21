@@ -9,13 +9,16 @@ import { useState, useEffect } from "react";
 
 export default function youtube() {
   const { data, isLoading, isError } = fetcher("api/youtube-links");
-  if(isLoading) return <Spinner></Spinner>;
-  if(isError) return <Error></Error>;
+  if (isLoading) return <Spinner></Spinner>;
+  if (isError) return <Error></Error>;
 
   return (
-    <section id="youtube" className="bg-gradient-to-b from-halcyon-50 to-halcyon-100">
-      <div className="md:h-screen mx-auto md:p-20 p-6">
-        <div className="grid md:grid-cols-2 gap-3">
+    <section
+      id="youtube"
+      className="bg-gradient-to-b from-halcyon-50 to-halcyon-100"
+    >
+      <div className="lg:min-h-screen mx-auto lg:p-20 p-6">
+        <div className="grid lg:grid-cols-2 gap-11">
           <div>
             <div className="title pb-3">
               <h className="font-subject font-bold text-4xl text-halcyon-700">
@@ -54,7 +57,7 @@ export default function youtube() {
                   </Link>
                 </div>
               </div>
-              <div className="font-subject text-2xl font-semibold flex flex-col md:flex-row gap-2">
+              <div className="font-subject text-2xl font-semibold flex flex-col lg:flex-row gap-2">
                 <p>For Collaborations:</p>
                 <p href={"/"} className="underline">
                   halcyonartpaintings@gmail.com
@@ -96,16 +99,15 @@ function YoutubeVideo({ data }) {
   const { snippet } = videoData;
 
   return (
-    <div className="grid md:grid-cols-2">
-      <div className="md:h-[250px] md:w-[500px]">
-        <iframe
-          className="h-full w-full"
-          src={`https://www.youtube.com/embed/${videoId}`}
-          title={snippet.title}
-          allowFullScreen
-        ></iframe>
-      </div>
-      <p className="text-xl font-semibold text-halcyon-700 md:pl-20 font-subject">
+    <div className="grid lg:grid-rows-1 lg:h-[250px] lg:w-[450px]">
+      <iframe
+        className="h-full w-full"
+        src={`https://www.youtube.com/embed/${videoId}`}
+        title={snippet.title}
+        allowFullScreen
+      ></iframe>
+
+      <p className="row-span-1 text-xl font-semibold text-halcyon-700 font-subject">
         {snippet.title}
       </p>
     </div>

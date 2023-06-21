@@ -11,8 +11,8 @@ export default function section4() {
 
   return (
     <section id="art" className="bg-gradient-to-b from-halcyon-50 to-halcyon-100">
-      <div className="md:h-screen md:mx-auto md:p-20 p-6 flex flex-col justify-between gap-4">
-        <div className="flex flex-col md:flex-row md:justify-between ">
+      <div className="lg:min-h-screen lg:mx-auto lg:p-20 p-6 flex flex-col justify-between gap-4">
+        <div className="flex flex-col lg:flex-row lg:justify-between ">
           <h1 className="font-subject font-bold text-4xl">art merchandise</h1>
           <div className="flex flex-col">
             <p className="text-lg font-subject">checkout via:</p>
@@ -25,12 +25,12 @@ export default function section4() {
           </div>
         </div>
         <div>
-          <div className="flex flex-col md:flex-row md:justify-between pb-6">
+          <div className="flex flex-col lg:flex-row lg:justify-between pb-6">
             <h1 className="font-subject font-bold text-3xl">notebooks</h1>
           </div>
 
           {/* grid columns */}
-          <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-6 place-content-center">
+          <div className="grid lg:grid-cols-3 gap-6 place-content-center">
             {data?.map((value, index) => (
               <Post data={value} key={index}></Post>
             ))}
@@ -61,7 +61,7 @@ function Post({ data }) {
   return (
     <div className="items flex gap-6">
       <div className="painting flex flex-col justify-between">
-        <img src={img1 || "/"} className="object-cover md:h-[250px] md:w-[250px]" />
+        <img src={img1 || "/"} className="object-cover lg:h-[250px] lg:w-[250px]" />
         <p className="text-2xl font-subject font-bold uppercase">
           {title || "Unknown"}{" "}
         </p>
@@ -69,10 +69,10 @@ function Post({ data }) {
           {subtitle || "Unknown"} <br /> {description || "Unknown"}
         </p>
       </div>
-      <div className="painting-info hidden md:block">
+      <div className="painting-info hidden lg:block">
         <img
           src={img2 || "/"}
-          className="object-cover object-center md:h-[400px] md:w-[250px]"
+          className="object-cover object-center lg:h-[400px] lg:w-[250px]"
         />
       </div>
     </div>
