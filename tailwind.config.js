@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     fontFamily: {
       subject: ['var(--font-bostonFont)'],
+      paragraph: ['var(--font-bostonFontRegular)'],
       description: ['var(--font-interFont)'],
     },
     colors: {

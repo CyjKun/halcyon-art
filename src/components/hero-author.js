@@ -19,7 +19,7 @@ export default function section5() {
             <h1 className="text-5xl font-bold font-subject">
               Renztelle Anne Miclat
             </h1>
-            <div className="font-subject text-xl font-semibold">
+            <div className="font-paragraph text-xl">
               <p className="py-3">
                 I’m 25, a self taught artist based in the Philippines.
               </p>

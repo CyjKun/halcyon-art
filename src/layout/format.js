@@ -8,6 +8,11 @@ const bostonFont = localFont({
   display: 'swap',
   variable: '--font-bostonFont',
 })
+const bostonFontRegular = localFont({
+  src: '../../public/fonts/BostonBlack.woff',
+  display: 'swap',
+  variable: '--font-bostonRegularFont',
+})
 
 const interFont = localFont({
   src: '../../public/fonts/Inter-ExtraLight-BETA.woff',
@@ -22,7 +27,7 @@ export default function format({ children }) {
         <title>Halcyon Art</title>
         <link rel="shortcut icon" href="/images/Logo.png" />
       </Head>
-      <main className={`${bostonFont.variable} ${interFont.variable}`}>{children}</main>
+      <main className={`${bostonFont.variable} ${interFont.variable} ${bostonFontRegular.variable}`}>{children}</main>
     </>
   );
 }
